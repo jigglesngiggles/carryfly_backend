@@ -1,25 +1,4 @@
-blinker @ file:///home/conda/feedstock_root/build_artifacts/blinker_1731096409132/work
-Brotli @ file:///croot/brotli-split_1736182456865/work
-certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1749972191589/work/certifi
-cffi @ file:///croot/cffi_1736182485317/work
-charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1746214863626/work
-click @ file:///home/conda/feedstock_root/build_artifacts/click_1747811314515/work
-Flask @ file:///home/conda/feedstock_root/build_artifacts/flask_1747203985407/work
-graalpy-virtualenv==0.0.1
-h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1738578511449/work
-hpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_1737618293087/work
-hpy==0.0.4
-hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1737618333194/work
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1733211830134/work
-importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_importlib-metadata_1747934053/work
-itsdangerous @ file:///home/conda/feedstock_root/build_artifacts/itsdangerous_1733308265247/work
-Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1741263328855/work
-MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_1733219583522/work
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pycparser_1733195786/work
-PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1733217236728/work
-python-dotenv @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dotenv_1750789290/work
-requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1749498106507/work
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1750271362675/work
-Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1733160440960/work
-zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1749421620841/work
-zstandard @ file:///croot/zstandard_1677013143055/work
+Flask==2.2.5
+playwright==1.43.0
+requests
+python-dotenv
