@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: carryfly_backend
+    env: python
+    buildCommand: pip install -r requirements.txt && playwright install
+    startCommand: python main.py
+    branch: main
+    autoDeploy: true
