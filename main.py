@@ -52,7 +52,8 @@ def stripe_webhook():
         name = shipping.get("name", "")
 
         # Trigger bot
-        threading.Thread(target=order_on_amazon, args=(name, address.get("line1", ""), address.get("city", ""), address.get("postal_code", ""))).start()
+        threading.Thread(target=order_on_amazon, args=(name, address.get("line1", ""), address.get("city", ""), address.get("postal_code", ""), True)).start()
+        #true for test, false for prod
 
     return jsonify(success=True)
 
