@@ -6,3 +6,4 @@ gunicorn
 cryptography
 pynacl
 stripe
+flask-cors
