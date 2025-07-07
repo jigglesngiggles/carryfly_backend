@@ -7,7 +7,11 @@ import os
 
 app = Flask(__name__)
 CORS(app, origins=["https://jigglesngiggles.github.io"])
-stripe.api_key = os.environ.get("STRIPE_SECRET_KEY")  # set this in Render
+
+if os.environ.get("TEST_MODE"):
+    stripe.api_key = os.environ.get("STRIPE_SECRET_TEST_KEY")  # set this in Render
+else: 
+    stripe.api_key = os.environ.get("STRIPE_SECRET_KEY")  # set this in Render
 
 @app.route("/create-checkout-session", methods=["POST"])
 def create_checkout_session():
@@ -39,7 +43,10 @@ def create_checkout_session():
 def stripe_webhook():
     payload = request.data
     sig_header = request.headers.get("Stripe-Signature")
-    webhook_secret = os.environ.get("STRIPE_WEBHOOK_SECRET")  # set this in Render
+    if os.environ.get("TEST_MODE"):
+        webhook_secret = os.environ.get("STRIPE_WEBHOOK_TEST_SECRET")  # set this in Render
+    else:
+        webhook_secret = os.environ.get("STRIPE_WEBHOOK_SECRET")  # set this in Render
 
     try:
         event = stripe.Webhook.construct_event(payload, sig_header, webhook_secret)
