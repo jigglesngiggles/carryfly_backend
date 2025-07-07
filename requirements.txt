@@ -3,3 +3,5 @@ playwright==1.43.0
 requests
 python-dotenv
 gunicorn
+cryptography
+pynacl
